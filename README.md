@@ -32,9 +32,14 @@ You can build production ready code at any time by running the following command
 `npm run build`
 
 ## The App file structure and code style
-The code structure and code style correspond to the angularjs styleguide https://github.com/toddmotto/angularjs-styleguide
+The code structure and code style correspond to the angularjs styleguide https://github.com/toddmotto/angularjs-styleguide.
+
 `/src/` folder contains the source files for the application code.
-`/node_modules/` contains npm 3d party dependencies
-`/dist/` contains results of building the app for production use
-`/coverage/` contains unit-tests coverage report
-`/static/` contains static files, such as images (currently images for markers clusters only)
+
+`/node_modules/` contains npm 3d party dependencies.
+
+`/dist/` contains results of building the app for production use.
+
+`/coverage/` contains unit-tests coverage report.
+
+`/static/` contains static files, such as images (currently images for markers clusters only).
