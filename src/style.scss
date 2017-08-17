@@ -1,0 +1,24 @@
+// Here will be my basic styles
+hr {
+  margin: 0.5rem 0;
+}
+
+.header {
+  text-transform: capitalize;
+}
+
+.footer {
+  padding: 3rem 1.5rem;
+}
+
+.section {
+  padding: 1.5rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 100vh;
+}

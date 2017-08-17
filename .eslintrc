@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "globals": {
+    "angular": false,
+    "console": false,
+    "inject": false,
+    "google": false,
+    "module": false,
+    "MarkerClusterer": false,
+    "window": false
+  },
+  "rules": {
+    "camelcase": 1,
+    "dot-notation": 1,
+    "eqeqeq": 1,
+    "no-bitwise": 1,
+    "no-cond-assign": 1,
+    "no-debugger": 1,
+    "no-dupe-args": 1,
+    "no-dupe-keys": 1,
+    "no-empty": 1,
+    "no-invalid-regexp": 1,
+    "no-invalid-this": 1,
+    "no-undef": 1,
+    "no-unreachable": 1,
+    "no-unused-vars": 1,
+    "wrap-iife": [
+      1,
+      "outside"
+    ],
+    "yoda": [
+      1,
+      "never"
+    ],
+    //ES6 Stuff
+    "arrow-spacing": 1,
+    "constructor-super": 1,
+    "no-class-assign": 1,
+    "no-const-assign": 1,
+    "no-dupe-class-members": 1,
+    "no-this-before-super": 1,
+    "no-var": 1,
+    "object-shorthand": 1,
+    "prefer-arrow-callback": 1,
+    "prefer-const": 1
+  }
+}
