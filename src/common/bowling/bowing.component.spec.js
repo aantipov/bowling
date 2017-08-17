@@ -34,10 +34,6 @@ describe('<bowling> component', () => {
       expect(ctrl.player).toBeNull();
     });
 
-    it('should define isGameFinished prop', () => {
-      expect(ctrl.isGameFinished).toBe(false);
-    });
-
     it('should define current frame prop', () => {
       expect(ctrl.frame).toBe(1);
     });

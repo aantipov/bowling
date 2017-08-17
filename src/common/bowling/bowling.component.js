@@ -5,7 +5,20 @@ export const BowlingComponent = {
   controller: class ComponentController {
     constructor() {}
 
-    $onInit() {}
+    $onInit() {
+      this.isGameStarted = false;
+      this.isGameFinished = false;
+      this.players = [];
+      this.player = null;
+      this.frame = 1;
+      this.roll = 1;
+    }
+
+    addPlayer() {}
+
+    start() {}
+
+    doRoll() {}
   },
 };
 
