@@ -1,3 +1,22 @@
 <div>
-  SCORESHEET: TODO
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Player</th>
+      <th ng-repeat="i in $ctrl.framesIndices track by $index">{{ i }}</th>
+      <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="player in $ctrl.players track by $index">
+      <td>{{ player.getName() }}</td>
+      <td ng-repeat="i in $ctrl.framesIndices track by $index">
+        {{ $ctrl.getRoll1Pins(player, $index) }} |
+        {{ $ctrl.getRoll2Pins(player, $index) }}
+        <div><strong>{{ $ctrl.getScore(player, $index) }}</strong></div>
+      </td>
+      <td><strong>{{ player.getTotalScore() }}</strong></td>
+    </tr>
+    </tbody>
+  </table>
 </div>

@@ -2,10 +2,29 @@ import templateUrl from './playground.html';
 
 export const PlaygroundComponent = {
   templateUrl,
-  controller: class ComponentController {
-    constructor() {}
+  bindings: {
+    isGameStarted: '<',
+    isGameFinished: '<',
+    players: '<',
+    player: '<',
+    frame: '<',
+    addPlayer: '<',
+    start: '<',
+    doRoll: '<',
+  },
+  controller: class PlaygroundController {
+    $onInit() {
+      this.playerName = null;
+    }
 
-    $onInit() {}
+    addNewPlayer() {
+      if (!this.playerName) {
+        return;
+      }
+
+      this.addPlayer(this.playerName);
+      this.playerName = null;
+    }
   },
 };
 

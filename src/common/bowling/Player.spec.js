@@ -15,7 +15,7 @@ describe('Player', () => {
   });
 
   it('::getLastFrame() should be defined', () => {
-    expect(typeof player.getLastFrame).toBe('function');
+    expect(typeof player.getCurrentFrame).toBe('function');
   });
 
   it('::roll() should be defined', () => {

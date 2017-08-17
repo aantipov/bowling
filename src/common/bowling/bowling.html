@@ -1,3 +1,23 @@
-<playground></playground>
-<scoresheet></scoresheet>
+<playground
+  ng-if="!$ctrl.isGameFinished"
+  is-game-started="$ctrl.isGameStarted"
+  is-game-ginished="$ctrl.isGameFinished"
+  players="$ctrl.players"
+  player="$ctrl.player"
+  frame="$ctrl.frame"
+  add-player="$ctrl.addPlayer"
+  start="$ctrl.start"
+  do-roll="$ctrl.doRoll"
+></playground>
+
+<scoresheet
+  ng-if="$ctrl.isGameStarted"
+  players="$ctrl.players"
+></scoresheet>
+
+<button class="button is-primary"
+        ng-if="$ctrl.isGameStarted && $ctrl.isGameFinished"
+        ng-click="$ctrl.reset()">
+  Reset game
+</button>
 

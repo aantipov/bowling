@@ -1,3 +1,47 @@
 <div>
-  PLAYGROUND: TODO
+  <!-- Create the team and start the game -->
+  <div ng-if="!$ctrl.isGameStarted">
+    <h2 class="title is-2">Create the team</h2>
+
+
+    <form ng-submit="$ctrl.addNewPlayer()">
+      <div class="field">
+        <div class="control">
+          <input class="input" type="text" placeholder="Type player's name" ng-model="$ctrl.playerName"/>
+        </div>
+      </div>
+
+
+      <button type="submit" class="button"
+              ng-click="$ctrl.addNewPlayer()">
+        Add a new player
+      </button>
+    </form>
+
+    <div class="container" ng-if="$ctrl.players.length">
+      <h2 class="subtitle">
+        The team
+
+        <button class="button is-primary"
+                ng-click="$ctrl.start()">
+          Start the game
+        </button>
+      </h2>
+
+
+      <div class="box">
+        <div ng-repeat="player in $ctrl.players">{{ player.getName() }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Play -->
+  <div ng-if="$ctrl.isGameStarted && !$ctrl.isGameFinished">
+    <div>Player: {{ $ctrl.player.getName() }}</div>
+    <div>Frame: {{ $ctrl.frame }}</div>
+    <button class="button is-primary"
+            ng-click="$ctrl.doRoll()">
+      Roll a ball
+    </button>
+  </div>
 </div>

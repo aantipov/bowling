@@ -37,10 +37,6 @@ describe('<bowling> component', () => {
     it('should define current frame prop', () => {
       expect(ctrl.frame).toBe(1);
     });
-
-    it('should define current roll prop', () => {
-      expect(ctrl.roll).toBe(1);
-    });
   });
 
   describe('::addPlayer()', () => {

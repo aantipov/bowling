@@ -15,10 +15,18 @@ hr {
   padding: 1.5rem;
 }
 
+.container {
+  padding: 1.5rem 0;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+.box {
+  padding: 1.5rem;
 }
